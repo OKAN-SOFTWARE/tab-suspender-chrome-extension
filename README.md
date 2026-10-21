@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/tab-suspender-pro-save-me/ofgncemnlblfnocjbojdhamacfffcpnm"><img src="https://img.shields.io/chrome-web-store/users/ofgncemnlblfnocjbojdhamacfffcpnm?label=Chrome%20Web%20Store%20Users&color=blue" alt="Chrome Web Store Users"></a>
-  <a href="https://chromewebstore.google.com/detail/tab-suspender-pro-save-me/ofgncemnlblfnocjbojdhamacfffcpnm"><img src="https://img.shields.io/chrome-web-store/rating/ofgncemnlblfnocjbojdhamacfffcpnm?label=Rating&color=gold" alt="Chrome Web Store Rating"></a>
+  <a href="https://github.com/theluckystrike/tab-suspender-chrome-extension/releases/latest"><img src="https://img.shields.io/github/v/release/theluckystrike/tab-suspender-chrome-extension?label=Release" alt="Latest release"></a>
   <img src="https://img.shields.io/github/license/theluckystrike/tab-suspender-chrome-extension" alt="License">
   <img src="https://img.shields.io/github/last-commit/theluckystrike/tab-suspender-chrome-extension" alt="Last Commit">
 </p>
