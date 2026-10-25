@@ -16,7 +16,6 @@ Tab Suspender replaces inactive tabs with a lightweight local page, freeing memo
 - Keyboard shortcuts for all common actions
 - Settings import/export as JSON
 - Tab search and filtering by title, URL, or status
-- Chrome tab group awareness
 
 **Weaknesses:**
 - Newer project with a smaller user base compared to established alternatives
@@ -42,6 +41,8 @@ Uses Chrome's native `chrome.tabs.discard()` API to unload tab memory without re
 
 **Strengths:**
 - Uses Chrome's built-in tab discarding mechanism
+- Built on Manifest V3 (v0.7.7) and actively maintained
+- Options for audio, unsaved-form and pinned-tab protection, a whitelist, settings import/export, a context menu and a keyboard shortcut
 - Minimal visual disruption (discarded tabs look the same in the tab bar)
 - No custom suspended page
 - Open source
@@ -50,7 +51,6 @@ Uses Chrome's native `chrome.tabs.discard()` API to unload tab memory without re
 - Less control over which tabs are discarded (Chrome's API has limitations)
 - No memory savings tracking or dashboard
 - No visual indicator showing which tabs are discarded
-- Limited configuration options compared to dedicated suspender extensions
 - Chrome may override discarding decisions
 - Some users report unreliable behavior with Chrome's native discarding
 
@@ -97,20 +97,21 @@ Collapses all open tabs into a single list page. A tab decluttering tool rather 
 |---------|:---:|:---:|:---:|:---:|:---:|
 | Available on CWS | Yes | Removed | Yes | Yes | Yes |
 | Open Source | Yes | No | Yes | Yes | No |
-| Manifest V3 | Yes | No (V2) | No (V2) | Partial | Yes |
+| Manifest V3 | Yes | No (V2) | Yes | Partial | Yes |
 | No Data Collection | Yes | No | Yes | Yes | Unknown |
 | Auto-Suspend | Yes | Yes | Yes | Yes | No |
 | Configurable Timeout | 5m - 24h | 20s - 3d | Limited | 20s - 3d | N/A |
-| Domain Whitelist | Yes | Yes | Limited | Yes | No |
-| Audio Protection | Yes | No | No | Partial | N/A |
-| Form Protection | Yes | No | No | No | N/A |
-| Pinned Tab Protection | Yes | Yes | No | Yes | N/A |
-| Keyboard Shortcuts | 4 shortcuts | Yes | No | Yes | No |
-| Context Menu | Yes | Yes | No | Yes | No |
+| Domain Whitelist | Yes | Yes | Yes | Yes | No |
+| Audio Protection | Yes | No | Yes | Partial | N/A |
+| Form Protection | Yes | No | Yes | No | N/A |
+| Pinned Tab Protection | Yes | Yes | Yes | Yes | N/A |
+| Keyboard Shortcuts | 4 shortcuts | Yes | Yes | Yes | No |
+| Context Menu | Yes | Yes | Yes | Yes | No |
 | Memory Dashboard | Yes | No | No | No | No |
-| Settings Import/Export | Yes | No | No | No | No |
+| Settings Import/Export | Yes | No | Yes | No | No |
 | Tab Search/Filter | Yes | No | No | No | List search |
-| Tab Group Support | Yes | No | No | No | No |
+
+The Auto Tab Discard column was checked against its v3 source (manifest 0.7.7) on 2026-10-25.
 
 ## Choosing the Right Tool
 
