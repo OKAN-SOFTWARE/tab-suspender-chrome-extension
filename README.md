@@ -1,6 +1,10 @@
 # Tab Suspender — Free Open Source Chrome Extension
 
-> The trusted Great Suspender alternative. Save memory and speed up Chrome by automatically suspending inactive tabs. No malware. No tracking. Just savings.
+> An MIT-licensed Manifest V3 Chrome extension that suspends inactive tabs to free memory. No analytics, no network requests, no third-party code.
+
+<p align="center">
+  <img src="assets/social-preview.png" alt="Tab Suspender by Zovo: save memory by suspending inactive tabs" width="640">
+</p>
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/tab-suspender-pro-save-me/ofgncemnlblfnocjbojdhamacfffcpnm"><img src="https://img.shields.io/chrome-web-store/users/ofgncemnlblfnocjbojdhamacfffcpnm?label=Chrome%20Web%20Store%20Users&color=blue" alt="Chrome Web Store Users"></a>
@@ -35,20 +39,20 @@ Unlike closed-source alternatives, every line of code is right here for you to i
   - `Alt+R` — Restore all tabs
   - `Alt+W` — Whitelist current site
 - **Context Menu Integration** — Right-click any page to suspend, restore, or whitelist directly from the context menu
-- **Memory Pressure Threshold** — Configure automatic suspension when system RAM usage exceeds a threshold
 - **Settings Import/Export** — Back up and restore your configuration across devices with JSON import/export
 - **Beautiful Suspended Tab Page** — Suspended tabs display the original favicon, page title, memory saved, and time suspended with a clean, branded design
 - **Badge Counter** — See the number of currently suspended tabs right on the extension icon
-- **Tab Group Awareness** — Respects Chrome's native tab grouping for organized browsing workflows
 - **Onboarding Flow** — Guided setup for new users with interactive demo and quick configuration
 
 ## 📦 Install
 
-### Chrome Web Store (Recommended)
+### Chrome Web Store
 
-👉 **[Install from Chrome Web Store](https://chromewebstore.google.com/detail/tab-suspender-pro-save-me/ofgncemnlblfnocjbojdhamacfffcpnm)** — One click install, automatic updates
+👉 **[Tab Suspender Pro on the Chrome Web Store](https://chromewebstore.google.com/detail/ofgncemnlblfnocjbojdhamacfffcpnm)** — one-click install, automatic updates
 
-### Manual Install (Developer)
+The Chrome Web Store build is Zovo's Tab Suspender Pro. It ships from a separate codebase, so its features and version numbers differ from this repository. Its core features are free; see [Pro Version](#-pro-version) below.
+
+### Install this repository (unpacked)
 
 1. Clone this repository:
    ```bash
@@ -73,26 +77,15 @@ See our [Security Policy](SECURITY.md) for more details.
 
 ## 🆚 Comparison
 
-| Feature | Tab Suspender (Zovo) | The Great Suspender | Auto Tab Discard | Workona |
-|---------|---------------------|-------------------|-----------------|---------|
-| Open Source | ✅ | ❌ (removed) | ✅ | ❌ |
-| Free | ✅ | N/A | ✅ | Freemium |
-| Manifest V3 | ✅ | ❌ | ❌ | ✅ |
-| Active Maintenance | ✅ | Abandoned | Limited | ✅ |
-| No Data Collection | ✅ | ❌ (malware) | ✅ | ❌ |
-| Tab Group Support | ✅ | ❌ | ❌ | ✅ |
-| Keyboard Shortcuts | ✅ | ✅ | ❌ | ❌ |
-| Memory Dashboard | ✅ | ❌ | ❌ | ❌ |
-| Form Protection | ✅ | ❌ | ❌ | ❌ |
+See [COMPARISON.md](COMPARISON.md) for a comparison with The Great Suspender, Auto Tab Discard, The Marvellous Suspender and OneTab.
 
 ## 🚀 Pro Version
 
-Need advanced features? Check out **[Tab Suspender Pro](https://chromewebstore.google.com/detail/tab-suspender-pro-save-me/ofgncemnlblfnocjbojdhamacfffcpnm)** on the Chrome Web Store for:
+The Chrome Web Store build, **[Tab Suspender Pro](https://chromewebstore.google.com/detail/ofgncemnlblfnocjbojdhamacfffcpnm)**, lists these features for Zovo members:
 
-- Advanced suspension rules
-- Session management
-- Statistics dashboard
-- Priority support
+- A custom suspend timer from 1 to 120 minutes
+- An unlimited whitelist
+- URL wildcard patterns, such as `https://docs.google.com/*`
 
 ## 🤝 More from Zovo
 
